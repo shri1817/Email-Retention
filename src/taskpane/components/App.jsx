@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 //import Header from "./Header";
 //import HeroList from "./HeroList";
-import Modal from "./Modal";
+//import Modal from "./Modal";
+import CreatClient from "./CreateClient";
+import DataGrid from "./DataGrid";
 
 //import TextInsertion from "./TextInsertion";
 import { makeStyles } from "@fluentui/react-components";
@@ -32,12 +34,18 @@ const App = () => {
   //     primaryText: "Create and visualize like a pro",
   //   },
   // ];
+  const [folderCreate, setFolderCreate] = React.useState(false);
+  const hidePopup = (isHide) => {
+    setFolderCreate(isHide);
+  };
 
   return (
     <div className={styles.root}>
+      {!folderCreate && <CreatClient onHidePopup={hidePopup} />}
+      {folderCreate && <DataGrid />}
       {/* <Header logo="assets/logo-filled.png" title={props.title} message="Welcome" />
       <HeroList message="Discover what this add-in can do for you today!" items={listItems} /> */}
-      <Modal />
+      {/* <Modal /> */}
       {/* <TextInsertion /> */}
     </div>
   );
