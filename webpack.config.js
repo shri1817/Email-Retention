@@ -110,6 +110,11 @@ module.exports = async (env, options) => {
       },
       port: process.env.npm_package_config_dev_server_port || 3000,
     },
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000,
+    },
   };
 
   return config;

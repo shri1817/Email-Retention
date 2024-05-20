@@ -9,9 +9,9 @@ import {
   DialogActions,
   Button,
   makeStyles,
+  Checkbox,
 } from "@fluentui/react-components";
-import ClientMatters from "./DataGrid";
-import ClientMatterForm from "./ClientMatterForm";
+import { Alert28Filled } from "@fluentui/react-icons";
 
 const useStyles = makeStyles({
   Dialog__main: {
@@ -32,15 +32,28 @@ const useStyles = makeStyles({
     //backgroundColor: "#F0F0F0",
     flexDirection: "column",
     rowGap: "10px",
+    fontFamily: "Inter",
+    fontSize: "10px",
+    fontWeight: "400",
+    lineHeight: "13px",
+    textAlign: "left",
   },
-  DialogContainer: {
+  checkContainer: {
     display: "grid",
-    gridTemplateColumns: "30% 70%",
+    gridTemplateColumns: "70% 30%",
     //backgroundColor: "#2196F3",
     // padding: "10px",
   },
-  gridItem: {
-    border: "1px solid rgba(0, 0, 0, 0.8)",
+  gridContainer: {
+    display: "grid",
+    gridTemplateColumns: "10% 90%",
+  },
+  addCheck: {
+    fontFamily: "Inter",
+    fontSize: "7px",
+    fontWeight: "400",
+    lineHeight: "8.47px",
+    textAlign: "left",
   },
 });
 
@@ -53,17 +66,18 @@ const Modal = () => {
 
   return (
     <div className={styles.Dialog__main}>
-      <Dialog modalType="non-modal" defaultOpen="true">
+      <Dialog modalType="modal" defaultOpen="true">
         {/* <DialogTrigger disableButtonEnhancement>
           <Button>Open non-modal dialog</Button>
         </DialogTrigger> */}
         <DialogSurface
           style={{
-            backgroundColor: "#F0F0F0",
+            backgroundColor: "#FFF",
+            //backgroundColor: "#F0F0F0",
             borderRadius: "0px",
-            padding: "0px",
+            padding: "10px",
             borderColor: "#909090",
-            maxWidth: "800px",
+            maxWidth: "420px",
           }}
         >
           <form onSubmit={handleSubmit}>
@@ -76,28 +90,32 @@ const Modal = () => {
                   fontSize: "9px",
                   lineHeight: "10.89px",
                   textAlign: "left",
-                  padding: "7px 0 0 10px",
-                  background: "#FFF",
+                  //padding: "6px 0 0 6px",
                 }}
               >
                 Create New Client Matter Folder
               </DialogTitle>
               <DialogContent className={styles.content}>
-                <div className={styles.DialogContainer}>
-                  <div className={styles.gridItem}>
-                    <ClientMatterForm />
+                <div className={styles.gridContainer}>
+                  <div>
+                    <Alert28Filled />
                   </div>
-                  <div className={styles.gridItem}>
-                    <ClientMatters />
+                  <div>
+                    New Client Matter Folder creation helps you to quickly and easily find folder names that follow our
+                    internal naming conventions and align to existing folders already in the DMS, saving you time and
+                    helping with Records Management and Email Retention policy compliance.
                   </div>
                 </div>
               </DialogContent>
-              <DialogActions>
-                <Button type="submit" appearance="primary">
-                  OK
-                </Button>
-                <DialogTrigger disableButtonEnhancement>
-                  <Button appearance="secondary">Cancel</Button>
+              <div className={styles.addCheck}>
+                <Checkbox />
+                In the future, do not show me this dialog box
+              </div>
+              <DialogActions style={{ paddingTop: "10px" }}>
+                <DialogTrigger disableButtonEnhancement style={{ backgroundColor: "yellow" }}>
+                  <Button className={styles.addCheck} appearance="secondary">
+                    OK
+                  </Button>
                 </DialogTrigger>
               </DialogActions>
             </DialogBody>
