@@ -6,12 +6,14 @@ import ClientMattersList from "./ClientMattersList";
 const useStyles = makeStyles({
   gridContainer: {
     display: "grid",
-    gridTemplateColumns: "30% 70%",
+    gridTemplateColumns: "40% 60%",
+    height: "100vh",
     //backgroundColor: "#2196F3",
     // padding: "10px",
   },
   gridItem: {
     border: "1px solid rgba(0, 0, 0, 0.8)",
+    height: "100vh",
   },
 });
 
