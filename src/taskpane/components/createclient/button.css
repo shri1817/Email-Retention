@@ -20,6 +20,7 @@ a {
 .title {
   font-size: 16px;
   font-weight: 400;
+  margin: 0 -8px 20px -8px;
 }
 .left-sec h5 {
   color: #909090;
@@ -40,6 +41,10 @@ a {
 .left-sec select:focus {
   color: #909090;
   border: 1px solid #909090;
+}
+
+.left-sec input[type="radio"] {
+  margin-left: 0;
 }
 
 .left-sec .ms-Grid-row {
@@ -81,13 +86,14 @@ a.btn:active {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 0;
 }
 
 .listing-btns {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px 8px 15px 0;
 }
 
 .listing-btns a.btn {
@@ -97,6 +103,7 @@ a.btn:active {
 .rgt-sec .data-view .ms-Grid-row:last-child {
   border: none;
 }
+
 .radio-section {
   margin-bottom: 20px;
 }
