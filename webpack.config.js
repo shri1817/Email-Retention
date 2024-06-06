@@ -57,6 +57,10 @@ module.exports = async (env, options) => {
           use: "html-loader",
         },
         {
+          test: /\.css$/,
+          use: ["style-loader", "css-loader"],
+        },
+        {
           test: /\.(png|jpg|jpeg|gif|ico)$/,
           type: "asset/resource",
           generator: {

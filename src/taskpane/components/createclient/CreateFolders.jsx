@@ -55,28 +55,33 @@ const CreateFolders = () => {
   };
 
   return (
-    <div className={styles.mainGridContainer}>
-      <div className={styles.gridTitle}>Create New Client Matter Folder</div>
-      <div className={styles.root}>
-        <TabList selectedValue={selectedValue} onTabSelect={onTabSelect}>
-          <Tab id="Client" value="client">
-            Select from All Client Matters
-          </Tab>
-          <Tab id="Billable" value="billable">
-            Select from My Billable Matters
-          </Tab>
-        </TabList>
-        <div className={styles.panels}>
-          {selectedValue === "client" && (
-            <div>
-              <Modal />
-              <ClientMatters />
-            </div>
-          )}
-          {selectedValue === "billable" && "Billable Matters will come here"}
-        </div>
-      </div>
-    </div>
+    <ClientMatters />
+    // <div>
+    //   {/* <Modal /> */}
+    //   <ClientMatters />
+    // </div>
+    // <div className={styles.mainGridContainer}>
+    //   <div className={styles.gridTitle}>Create New Client Matter Folder</div>
+    //   <div className={styles.root}>
+    //     <TabList selectedValue={selectedValue} onTabSelect={onTabSelect}>
+    //       <Tab id="Client" value="client">
+    //         Select from All Client Matters
+    //       </Tab>
+    //       <Tab id="Billable" value="billable">
+    //         Select from My Billable Matters
+    //       </Tab>
+    //     </TabList>
+    //     <div className={styles.panels}>
+    //       {selectedValue === "client" && (
+    //         <div>
+    //           <Modal />
+    //           <ClientMatters />
+    //         </div>
+    //       )}
+    //       {selectedValue === "billable" && "Billable Matters will come here"}
+    //     </div>
+    //   </div>
+    // </div>
   );
 };
 
