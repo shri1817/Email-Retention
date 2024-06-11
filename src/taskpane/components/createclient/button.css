@@ -1,40 +1,77 @@
+@import "office-ui-fabric-react/dist/css/fabric.css";
 a {
   outline: none;
 }
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
 .template {
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: 400;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
 }
 
 .top-sec {
   background-color: #fff;
-  padding: 15px;
+  padding: 7px 15px;
   margin-bottom: 20px;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 400;
   margin: 0 -8px 20px -8px;
 }
 .left-sec h5 {
   color: #909090;
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 500;
+}
+
+.clients-section span {
+  width: 100%;
+  border-radius: 0 !important;
+  font-size: 9px !important;
+  outline: none !important;
+  color: #909090 !important;
+  border: none;
+  display: flex;
+}
+
+.clients-section label {
+  font-size: 9px !important;
+  font-weight: 400 !important;
+  font-family: "Inter", sans-serif;
 }
 
 .left-sec input[type="text"],
 .left-sec select {
   width: 100%;
-  min-height: 20px;
+  font-size: 9px;
   border: 1px solid #909090;
   outline: none;
   color: #909090;
+  border-radius: 0;
+}
+
+.radio-group {
+  display: inline !important;
+}
+.radio-section input[type="radio"] ~ div {
+  margin: 0 !important;
+  height: 12px;
+  width: 12px;
+}
+
+.radio-section input[type="radio"] ~ div::after {
+  height: 12px;
+  width: 12px;
 }
 
 .left-sec input:focus,
@@ -43,9 +80,9 @@ a {
   border: 1px solid #909090;
 }
 
-.left-sec input[type="radio"] {
+/* .left-sec input[type="radio"] {
   margin-left: 0;
-}
+} */
 
 .left-sec .ms-Grid-row {
   margin-bottom: 10px;
@@ -56,11 +93,26 @@ a {
 .rgt-sec .data-view {
   border: 1px solid #909090;
   background-color: #fff;
-  padding: 5px;
+  padding: 0 5px;
   margin-top: 10px;
-  max-height: 320px;
+  max-height: 260px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.rgt-sec-title {
+  display: flex;
+}
+
+.rgt-sec-title span {
+  width: 50%;
+  display: inline;
+  font-size: 10px;
+  font-weight: 500;
+}
+.rgt-sec-title span:first-child {
+  padding-left: 15px;
+  width: calc(50% - 15px);
 }
 
 .rgt-sec .data-view .ms-Grid-row {
@@ -72,11 +124,12 @@ a {
 a.btn {
   width: 41px;
   border: 0.5px solid #909090;
-  padding: 6px 18px;
+  padding: 3px 18px;
   background-color: #fff;
   text-decoration: none;
   color: #585858;
   margin-left: 10px;
+  text-align: center;
 }
 a.btn:active {
   color: #585858;
@@ -104,6 +157,19 @@ a.btn:active {
   border: none;
 }
 
+.radio-section {
+  margin-bottom: 20px;
+}
+
+.rgt-sec .data-view .ms-Grid-col .ms-Grid-row:before {
+  background: #909090;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+}
 .radio-section {
   margin-bottom: 20px;
 }

@@ -2,6 +2,7 @@ import * as React from "react";
 import { makeStyles, shorthands, tokens, Tab, TabList } from "@fluentui/react-components";
 import ClientMatters from "./clientmatters/ClientMatters";
 import Modal from "../Modal";
+import axios from "axios";
 
 const useStyles = makeStyles({
   mainGridContainer: {
@@ -46,6 +47,8 @@ const useStyles = makeStyles({
   },
 });
 
+const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
+
 const CreateFolders = () => {
   const styles = useStyles();
   const [selectedValue, setSelectedValue] = React.useState("client");
@@ -54,34 +57,21 @@ const CreateFolders = () => {
     setSelectedValue(data.value);
   };
 
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+    });
+  }, []);
+
+  if (!post) return null;
+
   return (
-    <ClientMatters />
-    // <div>
-    //   {/* <Modal /> */}
-    //   <ClientMatters />
-    // </div>
-    // <div className={styles.mainGridContainer}>
-    //   <div className={styles.gridTitle}>Create New Client Matter Folder</div>
-    //   <div className={styles.root}>
-    //     <TabList selectedValue={selectedValue} onTabSelect={onTabSelect}>
-    //       <Tab id="Client" value="client">
-    //         Select from All Client Matters
-    //       </Tab>
-    //       <Tab id="Billable" value="billable">
-    //         Select from My Billable Matters
-    //       </Tab>
-    //     </TabList>
-    //     <div className={styles.panels}>
-    //       {selectedValue === "client" && (
-    //         <div>
-    //           <Modal />
-    //           <ClientMatters />
-    //         </div>
-    //       )}
-    //       {selectedValue === "billable" && "Billable Matters will come here"}
-    //     </div>
-    //   </div>
-    // </div>
+    <div>
+      {/* <Modal /> */}
+      <ClientMatters post={post} />
+    </div>
   );
 };
 

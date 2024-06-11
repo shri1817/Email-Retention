@@ -29,6 +29,7 @@
     "@fluentui/react-components": "^9.30.4",
     "@fluentui/react-icons": "^2.0.214",
     "@microsoft/office-js": "^1.1.92",
+    "axios": "^1.7.2",
     "core-js": "^3.9.1",
     "css-loader": "^7.1.2",
     "es6-promise": "^4.2.8",
