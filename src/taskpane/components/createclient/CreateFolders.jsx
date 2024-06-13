@@ -69,7 +69,7 @@ const CreateFolders = () => {
 
   return (
     <div>
-      {/* <Modal /> */}
+      <Modal />
       <ClientMatters post={post} />
     </div>
   );

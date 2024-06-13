@@ -44,10 +44,15 @@ input[type="checkbox"] {
   display: flex;
 }
 
-.clients-section label {
+Label,
+Button.btn {
   font-size: 9px !important;
   font-weight: 400 !important;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
+}
+
+.secondary {
+  background-color: #e1e1e1;
 }
 
 .left-sec input[type="text"],
@@ -95,7 +100,7 @@ input[type="checkbox"] {
   background-color: #fff;
   padding: 0 5px;
   margin-top: 10px;
-  max-height: 260px;
+  max-height: 290px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -121,18 +126,13 @@ input[type="checkbox"] {
   align-items: center;
   display: flex;
 }
-a.btn {
+.btn {
   width: 41px;
-  border: 0.5px solid #909090;
-  padding: 3px 18px;
+  border: 0.5px solid #909090 !important;
   background-color: #fff;
-  text-decoration: none;
-  color: #585858;
-  margin-left: 10px;
-  text-align: center;
-}
-a.btn:active {
-  color: #585858;
+  margin-left: 10px !important;
+  text-align: center !important;
+  border-radius: 0 !important;
 }
 
 .left-sec .btn-sec {

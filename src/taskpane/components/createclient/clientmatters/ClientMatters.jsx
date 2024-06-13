@@ -1,8 +1,9 @@
 import * as React from "react";
 import ClientMatterForm from "./ClientMatterForm";
 import ClientMattersList from "./ClientMattersList";
-import "../button.css";
+
 import { Input, Label, Radio, RadioGroup, Select, Button } from "@fluentui/react-components";
+import "../button.css";
 
 const ClientMatters = () => {
   //console.log("here data is", props.post);
@@ -259,12 +260,8 @@ const ClientMatters = () => {
                 <div className="ms-Grid-row">
                   <div className="ms-Grid-col ms-sm12 listing-btns">
                     [ZZZ] Folders Selected
-                    <a href="javascript:void(0)" className="btn">
-                      OK
-                    </a>
-                    <a href="javascript:void(0)" className="btn">
-                      Cancel
-                    </a>
+                    <Button className="btn secondary">OK</Button>
+                    <Button className="btn secondary">Cancel</Button>
                   </div>
                 </div>
               </div>
