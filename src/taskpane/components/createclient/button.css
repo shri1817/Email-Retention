@@ -63,6 +63,7 @@ Button.btn {
   outline: none;
   color: #909090;
   border-radius: 0;
+  font-family: "Inter", sans-serif !important;
 }
 
 .radio-group {
@@ -77,6 +78,12 @@ Button.btn {
 .radio-section input[type="radio"] ~ div::after {
   height: 12px;
   width: 12px;
+}
+
+.sel-border svg {
+  position: absolute;
+  right: 0;
+  top: 3px;
 }
 
 .left-sec input:focus,

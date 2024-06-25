@@ -95,7 +95,7 @@ const ClientMatters = () => {
                   </Label>
                 </div>
                 <div className="ms-Grid-col ms-sm6 ms-md12 ms-lg6">
-                  <Select size="small">
+                  <Select size="small" className="sel-border">
                     <option>Red</option>
                     <option>Green</option>
                     <option>Blue</option>
@@ -128,7 +128,21 @@ const ClientMatters = () => {
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
-                      <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
+                      <input type="checkbox" value="" id="defaultCheck1" /> Client\ Client\Aon (29406)\Closed Matters
+                    </div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Client\Aon (29406)\Open Matters</div>
+                  </div>
+                  <div className="ms-Grid-row">
+                    <div className="ms-Grid-col ms-md12 ms-lg6">
+                      <input type="checkbox" value="" id="defaultCheck1" /> Firm/Administrative\Aon (29406)/Closed
+                      Matters
+                    </div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
+                  </div>
+                  <div className="ms-Grid-row">
+                    <div className="ms-Grid-col ms-md12 ms-lg6">
+                      <input type="checkbox" value="" id="defaultCheck1" /> Firm/Administrative\Aon (29406)\Closed
+                      Matters
                     </div>
                     <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
                   </div>
@@ -136,53 +150,41 @@ const ClientMatters = () => {
                     <div className="ms-Grid-col ms-md12 ms-lg6">
                       <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
                     </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Client\Aon (29406)\Closed Matters Client\Aon</div>
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
                       <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
                     </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Client\Aon (29406)\Open Matters</div>
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
                       <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
                     </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Firm/Administrative\Aon (29406)\Closed Matters</div>
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
                       <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
                     </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Firm/Administrative\Aon (29406)\Closed Matters</div>
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
                       <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
                     </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
+                    <div className="ms-Grid-col ms-md12 ms-lg6">Firm/Administrative\Aon (29406)\Closed Matters</div>
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
-                      <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
+                      <input type="checkbox" value="" id="defaultCheck1" /> Client\Aon (29406)\Open Matters
                     </div>
                     <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
                   </div>
                   <div className="ms-Grid-row">
                     <div className="ms-Grid-col ms-md12 ms-lg6">
-                      <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
-                    </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
-                  </div>
-                  <div className="ms-Grid-row">
-                    <div className="ms-Grid-col ms-md12 ms-lg6">
-                      <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
-                    </div>
-                    <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
-                  </div>
-                  <div className="ms-Grid-row">
-                    <div className="ms-Grid-col ms-md12 ms-lg6">
-                      <input type="checkbox" value="" id="defaultCheck1" /> 25003 lorem ipsum
+                      <input type="checkbox" value="" id="defaultCheck1" /> Client\Aon (29406)\Open Matters
                     </div>
                     <div className="ms-Grid-col ms-md12 ms-lg6">Client/test</div>
                   </div>
