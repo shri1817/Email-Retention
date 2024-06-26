@@ -17,7 +17,7 @@ const ClientMatters = () => {
         </div>
         <div className="ms-Grid-row">
           <div className="left-sec ms-Grid-col ms-sm12 ms-md12 ms-lg5">
-            <h5>Select a client matter lorem ipsum lorem ipsumlorem ipsumlorem ipsum</h5>
+            <h5>Enter client and/or matter search terms to find and select a matter in the lookup.</h5>
             <form className="clients-section">
               <div className="ms-Grid-row">
                 <Label size="small" className="ms-Grid-col ms-sm6 ms-md12 ms-lg5 col-form-label">
@@ -262,8 +262,12 @@ const ClientMatters = () => {
                 <div className="ms-Grid-row">
                   <div className="ms-Grid-col ms-sm12 listing-btns">
                     [ZZZ] Folders Selected
-                    <Button className="btn secondary">OK</Button>
-                    <Button className="btn secondary">Cancel</Button>
+                    <Button size="small" className="btn secondary">
+                      OK
+                    </Button>
+                    <Button size="small" className="btn secondary">
+                      Cancel
+                    </Button>
                   </div>
                 </div>
               </div>
